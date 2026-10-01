@@ -1,0 +1,42 @@
+{
+  "name": "irctc-station-codes",
+  "version": "1.0.0",
+  "description": "Comprehensive, clean, and 100% verified database of all official Indian Railways (IRCTC) Station Codes, Station Names, Railway Zones, and Indian States.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./stations.json": "./data/stations.json",
+    "./stations.min.json": "./data/stations.min.json",
+    "./stations.csv": "./data/stations.csv"
+  },
+  "files": [
+    "dist",
+    "data"
+  ],
+  "scripts": {
+    "build": "node scripts/export.cjs"
+  },
+  "keywords": [
+    "irctc",
+    "indian-railways",
+    "railway-stations",
+    "station-codes",
+    "cris",
+    "train-booking",
+    "irctc-stations",
+    "railway-zones",
+    "indian-railway-stations"
+  ],
+  "author": "TatkalPro Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tatkalpro/irctc-station-codes"
+  }
+}
